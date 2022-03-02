@@ -94,8 +94,7 @@ app.use(userRouter);
 
 app.use(groupRouter);
 
-app.use(messageRouter);
-
+app.use(messageRouter);//
 
 mongoose.connect(process.env.DB_URL)
     .then((result) => {
